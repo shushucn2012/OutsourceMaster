@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color"
+    android:gravity="center_vertical">
+
+    <RelativeLayout
+        android:id="@+id/area_content"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_marginLeft="@dimen/com_border_margin"
+        android:layout_marginRight="@dimen/com_border_margin"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/yinyin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_project_title"
+            style="@style/text_33316_style"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="FaceTracker人脸跟踪视频解决方案" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_project_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="1dp"
+                android:src="@mipmap/price" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                style="@style/text_33312_style"
+                android:layout_marginLeft="5dp"
+                android:text="40万起"
+                android:textColor="@color/com_org" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_project_pic"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/default_pic" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/area_left"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="@dimen/big_border_margin"
+            android:src="@mipmap/icon_return" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/text_33324_style"
+        android:layout_marginLeft="@dimen/big_border_margin"
+        android:layout_marginTop="15dp"
+        android:text="提交成功" />
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="101dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="65dp"
+        android:src="@mipmap/phone_signal" />
+
+    <TextView
+        style="@style/text_33316_style"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:text="请保持手机通信畅通" />
+
+    <TextView
+        style="@style/text_99914_style"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="项目经理将很快与您取得联系" />
+
+    <Button
+        android:id="@+id/btn_look"
+        style="@style/btn_com_style"
+        android:layout_below="@+id/vp_pager"
+        android:layout_marginTop="65dp"
+        android:text="查看我的项目" />
+
+</LinearLayout>

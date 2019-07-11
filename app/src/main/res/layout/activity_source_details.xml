@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/topbar_com" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/area_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_put_order">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:layout_marginRight="@dimen/com_border_margin"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/yinyin"
+
+                    android:gravity="center"><!--android:elevation="7dp"-->
+
+                    <ImageView
+                        android:id="@+id/img_package"
+                        android:layout_width="match_parent"
+                        android:layout_height="178dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/default_pic" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    style="@style/text_33318_style"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:layout_marginRight="@dimen/com_border_margin"
+                    android:layout_marginTop="15dp"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tv_summary"
+                    style="@style/text_66614_style"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:layout_marginRight="@dimen/com_border_margin"
+                    android:layout_marginTop="15dp"
+                    android:lineSpacingExtra="5dp"
+                    android:text=""
+                    android:textSize="13sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:layout_marginRight="@dimen/com_border_margin"
+                    android:layout_marginTop="25dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:id="@+id/tv_price"
+                            style="@style/text_33318_style"
+                            android:text="￥"
+                            android:textColor="@color/com_org" />
+
+                        <TextView
+                            style="@style/text_33314_style"
+                            android:layout_marginLeft="5dp"
+                            android:text="万元/套"
+                            android:textColor="@color/com_org"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                   <!-- <Button
+                        android:id="@+id/btn_put_order"
+                        style="@style/btn_com_style"
+                        android:layout_width="100dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:text="下单"
+                        android:visibility="gone"/>-->
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/details_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/com_white"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:visibility="visible">
+
+                    <TextView
+                        style="@style/text_33318_style"
+                        android:layout_marginTop="25dp"
+                        android:text="方案详解" />
+
+                    <WebView
+                        android:id="@+id/webview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_put_order"
+            style="@style/btn_com_style"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@color/com_org"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:text="预约咨询" />
+
+        <LinearLayout
+            android:id="@+id/area_network"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:background="@color/bg_color"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="101dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="65dp"
+                android:src="@mipmap/phone_network" />
+
+            <TextView
+                style="@style/text_33316_style"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp"
+                android:text="网络连接失败" />
+
+            <TextView
+                style="@style/text_99914_style"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="请检查手机网络设置" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

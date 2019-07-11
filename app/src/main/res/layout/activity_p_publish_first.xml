@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/area_left"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/big_border_margin"
+            android:src="@mipmap/icon_return" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/area_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_33324_style"
+                android:layout_marginLeft="@dimen/big_border_margin"
+                android:layout_marginTop="15dp"
+                android:text="项目信息" />
+
+            <RelativeLayout
+                android:id="@+id/area_p_type"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="@dimen/big_border_margin"
+                android:layout_marginRight="@dimen/big_border_margin"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/rec_bg_stroke_bg_solid_corner5">
+
+                <TextView
+                    android:id="@+id/tv_p_type"
+                    style="@style/text_99914_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:text="项目类型" />
+
+                <ImageView
+                    android:id="@+id/img_down_arrow_type"
+                    android:layout_width="10dp"
+                    android:layout_height="6dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@mipmap/arrow_down_black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/area_p_hangye"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="@dimen/big_border_margin"
+                android:layout_marginRight="@dimen/big_border_margin"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rec_bg_stroke_bg_solid_corner5">
+
+                <TextView
+                    android:id="@+id/tv_p_hangye"
+                    style="@style/text_99914_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:text="所属行业" />
+
+                <ImageView
+                    android:id="@+id/img_down_arrow_hangye"
+                    android:layout_width="10dp"
+                    android:layout_height="6dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@mipmap/arrow_down_black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/area_p_week"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="@dimen/big_border_margin"
+                android:layout_marginRight="@dimen/big_border_margin"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rec_bg_stroke_bg_solid_corner5">
+
+                <TextView
+                    android:id="@+id/tv_p_week"
+                    style="@style/text_99914_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:text="期望外包周期" />
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="6dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@mipmap/arrow_down_black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/area_p_urgency"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="@dimen/big_border_margin"
+                android:layout_marginRight="@dimen/big_border_margin"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rec_bg_stroke_bg_solid_corner5">
+
+                <TextView
+                    android:id="@+id/tv_p_urgency"
+                    style="@style/text_99914_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:text="紧急程度" />
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="6dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@mipmap/arrow_down_black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="@dimen/big_border_margin"
+                android:layout_marginRight="@dimen/big_border_margin"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rec_bg_stroke_bg_solid_corner5">
+
+                <EditText
+                    android:id="@+id/edit_p_money"
+                    style="@style/edit_com_style"
+                    android:layout_marginLeft="8dp"
+                    android:hint="项目预算"
+                    android:inputType="number"
+                    android:maxLength="10" />
+
+                <TextView
+                    android:id="@+id/tv_p_money_unit"
+                    style="@style/text_33314_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:text="万元" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_next"
+                style="@style/btn_com_style"
+                android:layout_below="@+id/vp_pager"
+                android:layout_marginTop="10dp"
+                android:text="下一步" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/area_network"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="101dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="65dp"
+                android:src="@mipmap/phone_network" />
+
+            <TextView
+                style="@style/text_33316_style"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp"
+                android:text="网络连接失败" />
+
+            <TextView
+                style="@style/text_99914_style"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="请检查手机网络设置" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

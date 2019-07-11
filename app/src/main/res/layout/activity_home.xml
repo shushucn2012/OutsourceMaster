@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <TextView
+            android:id="@+id/tv_login"
+            style="@style/text_33314_style"
+            android:layout_height="match_parent"
+            android:layout_width="100dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/big_border_margin"
+            android:text="登 录"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/area_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/big_border_margin"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="1px"
+                android:background="@drawable/circle_shape_green" />
+
+            <TextView
+                android:id="@+id/tv_mobile"
+                style="@style/text_33314_style"
+                android:layout_marginLeft="5dp"
+                android:text="1123123123" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_person_join"
+            style="@style/text_33314_style"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent"
+            android:layout_width="100dp"
+            android:gravity="center_vertical|right"
+            android:paddingRight="@dimen/big_border_margin"
+            android:text="人才入驻" />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/text_33320_style"
+        android:layout_marginLeft="@dimen/big_border_margin"
+        android:layout_marginTop="30dp"
+        android:elevation="10dp"
+        android:text="外包大师"
+        android:textSize="24sp" />
+
+    <TextView
+        style="@style/text_33320_style"
+        android:layout_marginLeft="@dimen/big_border_margin"
+        android:text="靠谱的互联网外包"
+        android:textSize="24sp" />
+
+    <TextView
+        style="@style/text_33318_style"
+        android:layout_marginLeft="@dimen/big_border_margin"
+        android:layout_marginTop="5dp"
+        android:text="RELIABLE"
+        android:textColor="@color/gcccccc" />
+
+    <TextView
+        style="@style/text_33318_style"
+        android:layout_marginLeft="@dimen/big_border_margin"
+        android:layout_marginTop="-2dp"
+        android:text="INTERNET OUTSOURCING"
+        android:textColor="@color/gcccccc" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/text_33314_style"
+            android:layout_marginLeft="@dimen/big_border_margin"
+            android:text="解决方案"
+            android:textColor="@color/gcccccc" />
+
+        <ImageView
+            android:layout_width="13dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="1dp"
+            android:src="@mipmap/arrow_down"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/bg_color"
+        android:clipChildren="false">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_pager"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="52dp"
+            android:layout_marginRight="52dp"
+            android:layout_marginTop="10dp"
+            android:clipChildren="false" />
+
+        <Button
+            android:id="@+id/btn_publish"
+            style="@style/btn_com_style"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:text="发布外包" />
+    </RelativeLayout>
+
+</LinearLayout>

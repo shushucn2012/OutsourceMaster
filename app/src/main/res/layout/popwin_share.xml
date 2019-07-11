@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <View
+        android:id="@+id/area_above"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/pop_layout"/>
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/com_white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+
+            <LinearLayout
+                android:id="@+id/view_wx_friend"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="37dp"
+                    android:layout_height="32dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/weixin" />
+
+                <TextView
+                    style="@style/text_33314_style"
+                    android:layout_marginTop="8dp"
+                    android:text="微信好友" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view_wx_friends"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/pengyouquan" />
+
+                <TextView
+                    style="@style/text_33314_style"
+                    android:layout_marginTop="8dp"
+                    android:text="朋友圈" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view_sina"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="37dp"
+                    android:layout_height="32dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/weibo" />
+
+                <TextView
+                    style="@style/text_33314_style"
+                    android:layout_marginTop="8dp"
+                    android:text="微博" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

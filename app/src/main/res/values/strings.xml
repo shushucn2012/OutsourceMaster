@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">外包大师</string>
+    <string name="subscribe_my_category">我的频道</string>
+    <string name="subscribe_more_category">更多频道</string>
+    <string name="subscribe_manager_category_info">单击增删频道</string>
+    <string name="subscribe_manager_category_info_2">点击增删，长按拖拽排序</string>
+</resources>

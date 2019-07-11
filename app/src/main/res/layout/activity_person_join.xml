@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/area_left"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/big_border_margin"
+            android:src="@mipmap/icon_return" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/text_33324_style"
+        android:layout_marginLeft="@dimen/big_border_margin"
+        android:layout_marginTop="15dp"
+        android:text="人才入驻" />
+
+    <ImageView
+        android:layout_width="171dp"
+        android:layout_height="101dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="85dp"
+        android:src="@mipmap/laptop" />
+
+    <TextView
+        style="@style/text_33316_style"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:text="请在PC浏览器中完成人才入驻" />
+
+    <TextView
+        style="@style/text_99914_style"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="复制以下链接到PC浏览器" />
+
+    <TextView
+        android:id="@+id/tv_website"
+        style="@style/edit_com_style"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/big_border_margin"
+        android:layout_marginRight="@dimen/big_border_margin"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="http://www.waibaodashi.com/login?role=yi"
+        android:textColor="@color/g999999"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_copy"
+        style="@style/btn_com_style"
+        android:layout_marginTop="10dp"
+        android:text="复制链接" />
+
+</LinearLayout>

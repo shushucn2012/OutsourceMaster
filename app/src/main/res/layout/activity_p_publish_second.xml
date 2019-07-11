@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/area_left"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/big_border_margin"
+            android:src="@mipmap/icon_return" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/text_33324_style"
+        android:layout_marginLeft="@dimen/big_border_margin"
+        android:layout_marginTop="15dp"
+        android:text="项目简介" />
+
+    <EditText
+        android:id="@+id/edit_p_name"
+        style="@style/edit_com_style"
+        android:layout_marginLeft="@dimen/big_border_margin"
+        android:layout_marginRight="@dimen/big_border_margin"
+        android:layout_marginTop="35dp"
+        android:hint="项目名称" />
+
+    <EditText
+        android:id="@+id/edit_p_introduce"
+        style="@style/edit_com_style"
+        android:layout_height="130dp"
+        android:layout_marginLeft="@dimen/big_border_margin"
+        android:layout_marginRight="@dimen/big_border_margin"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:hint="项目简介。例如：打算开发一个微信应用，市面上可参考的产品是XXX，针对XXX领域和人群，主要目的是为了XXX"
+        android:minLines="6"
+        android:singleLine="false" />
+
+    <EditText
+        android:id="@+id/edit_p_example"
+        style="@style/edit_com_style"
+        android:layout_marginLeft="@dimen/big_border_margin"
+        android:layout_marginRight="@dimen/big_border_margin"
+        android:layout_marginTop="10dp"
+        android:hint="参考网站/产品" />
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/btn_com_style"
+        android:layout_below="@+id/vp_pager"
+        android:layout_marginTop="10dp"
+        android:text="下一步" />
+
+</LinearLayout>
